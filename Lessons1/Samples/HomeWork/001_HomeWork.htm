@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>CyberBionic Systematics</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style>
+body {
+background: #f1f1f1;
+font-size: 20px;
+font-family: 'Arial', Sans-Serif;
+}
+.header {
+background: #1c66ba;
+width:100%;
+height: 90px;
+border-bottom: 5px solid #afccec;
+font-family: 'Trebuchet MS';
+font-style: italic;
+}
+.logo {
+width: 294px;
+height: 90px;
+margin-top:5px;
+margin-left: 400px;
+float:left;
+}
+.logo-text {
+float:right;
+font-size:35px;
+margin-top:19px;
+margin-right: 500px;
+color:#fff;
+font-weight: normal;
+}
+
+.wrapper-content {
+margin-left: 200px;
+float: left;
+width: 75%;
+height: 100%;
+margin-top: 20px;
+}
+
+.content-area {
+background: #fff;
+border: #e6e6e6;
+border-radius: 5px;
+box-shadow: 0 1px 8px rgba(0,0,0,0.27);
+}
+</style>
+<script>
+
+    var x = 6;
+    var y = 15;
+    var z = 4;
+    var result;
+
+</script>
+</head>
+<body>
+<div class="header">
+<div class="logo">
+<img src="http://cbsystematics.com/Resources/Images/logo.png" />
+</div>
+<div class="logo-text">
+My Homeworks
+</div>
+</div>
+<div class="wrapper-content">
+<div class="content-area">
+<div style="padding-top:20px;padding-bottom:20px;" align="center">
+<script>
+
+    var result = x += y - x++ * z;
+    document.write("x += y - x++ * z = " + result + "<br/><hr/>");
+
+    var result = z = --x - y * 5;
+    document.write("z = -- x - y * 5 = " + result + "<br/><hr/>");
+
+    var result = y /= x + 5 % z;
+    document.write("y /= x + 5 % z = " + result + "<br/><hr/>");
+
+    var result = z = x++ + y * 5;
+    document.write("z = x++ + y * 5 = " + result + "<br/><hr/>");
+
+    var result = x = y - x++ * z;
+    document.write("x = y - x++ * z = " + result);
+
+</script>
+</div>
+</div>
+</div>
+</body>
+</html>
