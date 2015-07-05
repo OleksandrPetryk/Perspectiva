@@ -1,0 +1,46 @@
+﻿<html>
+<head>
+    <title>Условная конструкция if</title>
+
+    <script type="text/javascript">
+
+        var a = confirm(" Принять первое значение как истину? ");
+
+        if (a)
+        {
+            document.write("<p> Первое значение ИСТИНА </p>");
+        }
+        else
+        {
+            document.write("<p> Первое значение ЛОЖЬ </p>");
+        }
+
+
+        var b = confirm("Принять второе значение как истину?");
+
+        if (b) {
+            document.write("<p>Второе значение ИСТИНА </p>");
+        }
+        else {
+            document.write("<p>Второе значение ЛОЖЬ </p>");
+        }
+
+
+        if (a && b) {
+            document.write("<p> Оба значения ИСТИНА </p>");
+        }
+        else if (a || b)
+        {
+            document.write("<p> Одно из значений ИСТИНА, другое ЛОЖЬ </p>");
+        }
+        else
+        {
+            document.write("<p> Оба значения ЛОЖЬ </p>");
+        }
+
+    </script>
+
+</head>
+<body>
+</body>
+</html>

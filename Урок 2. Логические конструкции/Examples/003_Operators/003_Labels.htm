@@ -1,0 +1,56 @@
+﻿<!--
+
+        Метки.
+
+-->
+
+<html>
+<head>
+    <title>Метки</title>
+
+    <script type="text/javascript">
+
+        label:
+
+            for (var j = 0; j < 5; j++)
+            {
+
+                for (var i = 0; i < 5; i++)
+                    {
+
+                    var input = prompt("введите любой текст, чтобы выйти нажмите отмена i= " + i + "    j = " + j, '');
+                    // break label; 
+
+                    if (input == null)              
+                      {
+                        break ;
+
+                       //continue label;
+
+                    }
+
+                document.write(input + " ");
+            }
+            document.write("<br/>");
+        }
+        document.write('готово!');
+
+        //var a = +prompt("enter", "hello");
+
+        //var b = typeof (a) ; 
+
+        //if ( b == "number")
+
+        //    alert("you entered number");
+        //else
+        //    alert("you enter string");
+
+
+
+
+    </script>
+
+</head>
+<body>
+</body>
+</html>
