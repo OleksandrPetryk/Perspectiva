@@ -1,0 +1,30 @@
+﻿<!--
+
+    concat() - дополняет элементы массива указанными элементами в параметрах.
+
+-->
+
+<html>
+<head>
+    <title>Метод concat()</title>
+
+    <script type="text/javascript">
+
+        var a = [1, 2, 3];
+
+        a = a.concat(4, 5);
+        document.write("<p>" + a);  // 1,2,3,4,5
+        
+        b = [11, 12, 13];
+
+        a = a.concat(b);
+        document.write("<p>" + a);  // 1,2,3,4,5,11,12,13
+
+        alert(a[1]);
+
+    </script>
+
+</head>
+<body>
+</body>
+</html>
