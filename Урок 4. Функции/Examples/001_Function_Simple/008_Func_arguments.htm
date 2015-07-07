@@ -1,0 +1,47 @@
+﻿<!--
+
+            При вызове функции создается специальный масив содержащий 
+            в себе аргументы, которые были переданы при вызове.
+            У этого массива есть свойство length, в котором хранится 
+            количество аргументов переданых функции.
+
+-->
+
+<html>
+<head>
+    <title>Массив Аргументов arguments</title>
+
+    <script type="text/javascript">
+
+        function Max(a, b, c)
+        {
+
+            alert(c);
+
+            var maxValue = Number.NEGATIVE_INFINITY;
+
+            document.write("<p>Number.NEGATIVE_INFINITY = " + maxValue + "<hr/>");
+
+            for (var i = 0; i <  arguments.length; i++)
+            {
+
+                if (arguments[i] > maxValue)
+                {
+                    maxValue = arguments[i];
+                }
+            }
+
+            return maxValue;
+        }
+
+        var res = Max(-33, 33, 777, -22, 10000);
+       // var res1 = Array(5);
+
+        document.write("<p>Максимальное значение одного из аргументов функции = " + res);
+
+    </script>
+
+</head>
+<body>
+</body>
+</html>
