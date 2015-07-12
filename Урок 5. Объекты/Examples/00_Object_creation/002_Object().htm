@@ -39,9 +39,11 @@
 
         // Добавляем к объекту метод.
 
-        f = function () {
+        var f = function () {
           document.write("<p>x = " + this.x + "<p>y = " + this.y);
         };
+
+        //f();
 
         point1.func = f;
         point2.func = f;

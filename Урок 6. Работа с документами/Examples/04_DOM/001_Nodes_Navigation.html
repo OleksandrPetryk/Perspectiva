@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Работа с узлами DOM - Свойства</title>
+
+    <script type="text/javascript">
+        // Основные типы узлов
+        // Интерфейс           | Константа nodeType            | Значение nodeType
+        // ------------------------------------------------------------------------
+        // Element             | Node.ELEMENT_NODE             | 1
+        // Text                | Node.TEXT_NODE                | 3
+        // Document            | Node.DOCUMENT_NODE            | 9
+        // Comment             | Node.COMMENT_NODE             | 8
+        // DocumentFragment    | Node.DOCUMNT_FRAGMENT_NODE    | 11
+        // Attr                | Node.ATTRIBUTE_NODE           | 2
+        // ------------------------------------------------------------------------
+
+        // Свойства для навигации по DOM
+        // childNodes - массив всех дочерних узлов
+        // firstChild - первый дочерний узел
+        // lastChild - последний дочерний узел
+        // nextSibling - следующий узел расположенный на одном уровне с текущим
+        // previousSibling - предыдущий узел расположенный на одном уровне с текущим
+        // parentNode - родительский узел для текущего элемента
+        window.onload = function () {
+
+            var p = document.getElementById("p2");
+
+            var msg = "";
+            for (var i = 0; i < p.childNodes.length; i++) {
+                msg += p.childNodes[i].nodeType + " (" + p.childNodes[i] + ")\r\n";
+            }
+            alert("Список дочерних элементов childNodes для p2\r\n" + msg);
+
+
+            p = document.getElementById("p1");
+
+            alert("Первый дочерний элемент firstChild для p1\r\n"
+                + p.firstChild.nodeType
+                + "("
+                + p.firstChild.textContent + ")");
+
+            p = document.getElementById("p2");
+            
+            alert("Последний дочерний элемент lastChild для p2 \r\n"
+                + p.lastChild.nodeType
+                + "("
+                + p.lastChild.textContent + ")");
+
+            p = document.getElementById("span1");
+
+            alert("Следующий братский элемент nextSibling для span1 \r\n"
+                + p.firstChild.nodeType
+                + "("
+                + p.nextSibling.textContent + ")");
+        }
+    </script>
+</head>
+<body>
+    <p id="p1">Text(p1)</p>
+    <p id="p2">
+        <span id="span1">
+            <p></p>  
+            fgdhjgh
+        </span>
+        <p>xdfhgj</p>
+    </p>
+    <p id="p3">Text(p2)</p>
+</body>
+</html>

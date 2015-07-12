@@ -12,7 +12,8 @@
     <script type="text/javascript">
 
         // Создаем функцию, которая принимает два параметра с именем x и y и тело, которое возвращает их сумму.
-        var func = new Function("x", "y", "return x + y;");
+        var func = new Function("x", "y", "return x + y; ");  //var func = function (x, y) { return x + y; }
+
         var result = func(20, 10);
         
         alert( typeof (func));
