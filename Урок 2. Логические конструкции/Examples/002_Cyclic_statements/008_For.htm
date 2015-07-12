@@ -13,6 +13,12 @@
         // for ( Инициализация счетчика итераций; Условие; Изменение счетчика ) { Тело цикла }
 
         for (var counter = 0; counter < 3; counter++) {
+
+            if (counter == 1)
+            {
+                continue;
+            }
+
             document.write("<p>Counter = " + counter);
         }
 

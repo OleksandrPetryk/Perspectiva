@@ -14,20 +14,21 @@
 
         function outer() {
 
-            //alert("Hello");
+            alert("Hello");
 
-           // inner(); // Вызов функции.
+            inner(); // Вызов функции.
 
             function inner() { // Вложенная функция.
                 document.write("<p style='background-color:lightblue;'>Inner Function");
+                inner();
 
             }
 
-            //inner(); // Вызов функции.
+            inner(); // Вызов функции.
         }
 
-          inner();
-         //outer();     // Вызов функции.
+          //inner();
+          outer();     // Вызов функции.
 
     </script>
 
