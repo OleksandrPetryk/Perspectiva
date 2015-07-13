@@ -7,7 +7,7 @@
 (function ()
 {
 
-    var message = "Hello from module3"; //  переменная не глобальная
+    message = "Hello from module3"; //  переменная не глобальная
 
     alert(message);
 
