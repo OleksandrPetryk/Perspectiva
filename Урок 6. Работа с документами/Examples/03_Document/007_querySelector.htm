@@ -4,17 +4,15 @@
     <meta charset="utf-8" />
     <title>querySelect function</title>
     <script>
-        if (window.addEventListener) window.addEventListener("load", loadHandler, false);
-
-        function loadHandler() {
+       window.onload = function loadHandler() {
             // Получение первого элемента на странице, который соответствует одному из селекторов указанных в параметрах.
             // в данном случае возвращаем элемент со значением test в атрибуте class
 
-            var e = document.querySelector(".test"); // $(".test") - эквивалент в jQuery
+            //var e = document.querySelector(".test"); // $(".test") - эквивалент в jQuery
 
-            //var e = document.querySelector("#helloWorld", ".test2"); // получение элемента с id helloWold или элемента с классом test
+             //var e = document.querySelector("#helloWorld", ".test2"); // получение элемента с id helloWold или элемента с классом test
 
-            //var e = document.querySelector(".menu > li"); // первый li вложенный в элемент с классом menu
+            var e = document.querySelector(".menu > li"); // первый li вложенный в элемент с классом menu
 
             e.style.fontSize = "30px";
             e.style.color = "red";
