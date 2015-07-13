@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Screen</title>
+    <script>
+
+        screen.colorDepth
+
+        window.onload = function () {
+            
+            var txt = "";
+            txt += "<p>Total width/height: " + screen.width + "*" + screen.height + "</p>";                //Returns the total width of the screen
+            txt += "<p>Available width/height: " + screen.availWidth + "*" + screen.availHeight + "</p>";  //Returns the width of the screen (excluding the Windows Taskbar)
+            txt += "<p>Color depth: " + screen.colorDepth + "</p>";                                        //Returns the bit depth of the color palette for displaying images
+            txt += "<p>Color resolution: " + screen.pixelDepth + "</p>";                                   //Returns the color resolution (in bits per pixel) of the screen
+
+            document.write(txt);
+
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>
