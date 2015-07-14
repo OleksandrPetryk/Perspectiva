@@ -13,11 +13,11 @@
         // на подобие Geometry в этом примере.
 
         // screenLeft, screenX, innerWidth - свойства объекта window специфичные для версии браузера.
-        if (window.screenLeft || window.screenLeft == 0) { // для IE 
+        if (window.screenLeft) { // для IE 
             Geometry.getWindowX = function () { return window.screenLeft; };
             Geometry.getWindowY = function () { return window.screenTop; };
         }
-        else if (window.screenX || window.screenX == 0) { // для Firefox 
+        else if (window.screenX) { // для Firefox 
             Geometry.getWindowX = function () { return window.screenX; };
             Geometry.getWindowY = function () { return window.screenY; };
         }
