@@ -7,6 +7,6 @@ window.onload = function () {
 }
 
 function animate() {
-  div1.style.left = leftPos + "%";
+  div1.style.left = leftPos + "px";
   leftPos++;
 }
