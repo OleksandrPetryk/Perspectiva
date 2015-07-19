@@ -6,16 +6,23 @@
         window.onload = handler2;
 
         // параметр e будет передаваться в IE 9 только при регистрации события через attachEvent
-        function handler(e){
-            if (!e) e = window.event; // получение информации о событии в IE
+        //function handler(e){
+        //    if (!e) e = window.event; // получение информации о событии в IE
             
 
-            // тело обработчика события
+        //    // тело обработчика события
+        //}
+
+        function handler2(event)
+        {
+            var e = event || window.event; // второй вариант.
+            alert(e);
         }
 
-        function handler2(event) {
-            var e = event || window.event; // второй вариант.
-        }
+        
+            //var rez = 5 || 7;
+            //alert(rez);
+        
     </script>
 </head>
 <body>
