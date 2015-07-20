@@ -36,18 +36,18 @@ function zipcodeOnChange() {
 // событие при отправке формы на сервер.
 function onsubmiHandler() {
 
-    var invalid = false;
+    var flag = false;
 
     for (var i = 0; i < form1.elements.length; ++i) {
         var e = form1.elements[i];
         // проверка типа элемента и наличия обработчика события onchange.
         if (e.type == "text" && e.onchange) {
             e.onchange(); // запуск события onchanhe
-            if (e.className == "invalid") invalid = true;
+            if (e.className == "invalid") flag = true;
         }
     }
 
-    if (invalid) {
+    if (flag) {
         alert("Допущены ошибки при заполнении формы.");
         return false; // отмена отправки формы.
     }

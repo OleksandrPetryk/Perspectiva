@@ -5,7 +5,7 @@
     <script>
 
         window.onload = function () {
-            for (var i = 0; i < document.forms[0].elements.length; i++) {
+            for (var i in document.forms[0].elements) {
 
                 // cобытие на получение фокуса.
                 document.forms[0].elements[i].onfocus = function () {
