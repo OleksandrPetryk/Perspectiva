@@ -30,7 +30,7 @@
         document.write(text + " -> " + pattern.test(text) + "<br />");
 
         // http://www.dinamicka.com или https://www.dinamicka.com
-        pattern = /https?:\/\/[\w\d:\.:\?\&]+/igm;
+        pattern = /http[s]?:\/\/[\w\d:\.:\?\&]+/igm;
         text = "http://www.dinamicka.com или https://www.dinamicka.com blah-blah-blah http://www.google.com:80";
         var res;
         while ((res = pattern.exec(text)) != null) {
