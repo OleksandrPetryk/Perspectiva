@@ -10,12 +10,11 @@
                 document.body.style.backgroundColor = window.localStorage.pageColor;
             }
 
-            document.getElementById("saveButton").addEventListener("change", function () {
+            //document.getElementById("saveButton").addEventListener("change", function () {
 
 
                 document.getElementById("saveButton").addEventListener("click", function () {
-
-                    f90();
+                                      
 
                 var selectedColor = getCheckedRadioId("color")
                 window.localStorage.pageColor = selectedColor;
