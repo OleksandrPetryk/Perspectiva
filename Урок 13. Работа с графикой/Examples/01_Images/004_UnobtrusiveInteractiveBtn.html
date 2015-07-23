@@ -12,10 +12,8 @@
             var e = document.getElementById(id);
 
             // если элемент не img пропускаем, завершаем функцию.
-            //if (e.tagName.toLowerCase() != "img") return;
-
-            //(new Image()).src = path;
-
+            if (e.tagName.toLowerCase() != "img") return;
+            
             e.addEventListener("mouseover", function () { this.src = path; })
             e.addEventListener("mouseout", function () { this.src = "images/button.jpg" })
         }

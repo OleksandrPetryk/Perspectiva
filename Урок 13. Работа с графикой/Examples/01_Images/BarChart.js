@@ -23,7 +23,6 @@
         bar.style.width = barWidth - 4 + "px";
 
         bar.style.position = "absolute";
-        bar.style.margin = "4px";
         bar.style.bottom = "0px";
         bar.style.left = barWidth * i + "px";
 
