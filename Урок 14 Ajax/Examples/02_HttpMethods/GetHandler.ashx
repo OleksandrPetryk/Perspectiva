@@ -13,7 +13,7 @@ public class GetHandler : IHttpHandler {
         string bParam = context.Request.QueryString["b"];
         
         // Формирование ответа.
-        context.Response.Write("<b>GET</b> параметры переданные с запросом: c=" + aParam + ", d=" + bParam);
+        context.Response.Write("<b>GET</b> параметры переданные с запросом: n=" + aParam + ", m=" + bParam);
     }
  
     public bool IsReusable {
