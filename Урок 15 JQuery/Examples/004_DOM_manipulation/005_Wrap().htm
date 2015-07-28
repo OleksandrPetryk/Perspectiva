@@ -20,8 +20,12 @@
                 $("p").empty();
             });
 
+            var a = $("span");
+
             $("#removeBtn").click(function () {
                 $("span").remove();
+                alert(a.text());
+
             });
         });
 
@@ -38,8 +42,8 @@
     </style>
 </head>
 <body>
-    <span>Paragraph</span>
-    <p>Hello world</p>
+    <span>Span</span>
+    <p>Paragraph</p>
     <input type="button" value="Clear" id="clearBtn" />
     <input type="button" value="Remove" id="removeBtn" />
 </body>
