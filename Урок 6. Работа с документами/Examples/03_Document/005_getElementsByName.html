@@ -4,6 +4,8 @@
     <title>getElementsByName</title>
     <script type="text/javascript">
         
+        window.onload = function () {
+
 
             // обработчик на событие нажатие по кнопке
             document.getElementById("answerButton").onclick = function () {
@@ -18,7 +20,7 @@
                 alert(res);
             }
 
-
+        }
     </script>
 </head>
 <body>
@@ -27,5 +29,8 @@
     Не знаю<input type="radio" name="answer" value="Не знаю" />
 
     <input id="answerButton" type="button" value="Получить ответ" />
+
+
+
 </body>
 </html>
