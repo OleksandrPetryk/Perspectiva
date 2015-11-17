@@ -13,12 +13,15 @@
             }
 
             get("startButton").onclick = function () {
-               intervalHandler = setInterval(count, 5);
+
+
+                intervalHandler = setInterval(count, 1000);
             }
 
             get("stopButton").onclick = function () {
                 // останавливаем таймер, по которому вызывается функция count
                 clearInterval(intervalHandler);
+
             }
         }
 
