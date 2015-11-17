@@ -43,26 +43,23 @@
             p = document.getElementById("p2");
             
             alert("Последний дочерний элемент lastChild для p2 \r\n"
-                + p.lastChild.nodeType
-                + "("
+                    + p.lastChild.nodeType
+                    + "("
                 + p.lastChild.textContent + ")");
 
-            p = document.getElementById("span1");
+            span = document.getElementById("span1");
 
             alert("Следующий братский элемент nextSibling для span1 \r\n"
-                + p.firstChild.nodeType
+                + span.firstChild.nodeType
                 + "("
-                + p.nextSibling.textContent + ")");
+                + span.nextSibling.textContent + ")");
         }
     </script>
 </head>
 <body>
     <p id="p1">Text(p1)</p>
     <p id="p2">
-        <span id="span1">
-            fgdhjgh
-        </span>
-        <p>xdfhgj</p>
+        <span id="span1">span1</span><span>span2</span>
     </p>
     <p id="p3">Text(p2)</p>
 </body>
