@@ -7,11 +7,11 @@
         var isTunnel = true;
 
         window.onload = function () {
-            var e1 = document.getElementById("first");
-            var e2 = document.getElementById("second");
-            var e3 = document.getElementById("third");
+            var div1 = document.getElementById("first");
+            var div2 = document.getElementById("second");
+            var div3 = document.getElementById("third");
 
-            e1.addEventListener("click",
+            div1.addEventListener("click",
                 // e - параметр хранит объект с информацией о событии.
                 function (e) {
                     
@@ -22,7 +22,7 @@
                 },
             isTunnel);
 
-            e2.addEventListener("click",
+            div2.addEventListener("click",
                 function (e) {
                     this.style.backgroundColor = "yellow";
                     alert("Обработчик DIV 2");
@@ -30,7 +30,7 @@
                 },
             isTunnel);
 
-            e3.addEventListener("click",
+            div3.addEventListener("click",
                 function (e) {
                     this.style.backgroundColor = "red";
                     alert("Обработчик DIV 3");
