@@ -13,8 +13,10 @@ function init() {
 // метод проверки значения в элементе по регулярному выражению.
 function validate(elem, pattern) {
     var res = elem.value.search(pattern);
-    if (res == -1) elem.className = "invalid"; // установка CSS класса 
-    else elem.className = "valid";
+    if (res == -1)
+        elem.className = "invalid"; // установка CSS класса 
+    else
+        elem.className = "valid";
 }
 
 // обработчики событий изменения текста в окне.
@@ -24,6 +26,8 @@ function nameOnChange() {
 }
 
 function emailOnChange() {
+
+    //               006qsdr    @.-askjdh    .com
     var pattern = /\b[a-z0-9._]+@[a-z0-9.-]+\.[a-z]{2,4}\b/i;
     validate(this, pattern);
 }
@@ -42,7 +46,7 @@ function onsubmiHandler() {
         var e = form1.elements[i];
         // проверка типа элемента и наличия обработчика события onchange.
         if (e.type == "text" && e.onchange) {
-            e.onchange(); // запуск события onchanhe
+            e.onchange(); // запуск события onchange
             if (e.className == "invalid") flag = true;
         }
     }

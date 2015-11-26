@@ -4,7 +4,7 @@
     <title>stopPropogation()</title>
 
     <script>
-        var isTunnel = true;
+        var isTunnel = false;
 
         window.onload = function () {
             var div1 = document.getElementById("first");
@@ -26,7 +26,7 @@
                 function (e) {
                     this.style.backgroundColor = "yellow";
                     alert("Обработчик DIV 2");
-                    //e.stopPropagation();
+                    e.stopPropagation();
                 },
             isTunnel);
 
@@ -34,7 +34,7 @@
                 function (e) {
                     this.style.backgroundColor = "red";
                     alert("Обработчик DIV 3");
-                    e.stopPropagation();
+                    //e.stopPropagation();
                 },
             isTunnel);
         }
