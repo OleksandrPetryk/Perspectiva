@@ -9,7 +9,7 @@
         document.write(substrs.join("<br />"));
 
         // charAt - возвращает символ по указанной позиции.
-        var firstChar = str.charAt(4);
+        var firstChar = str.charAt(0);
         var lastChar = str.charAt(str.length - 1);
         document.write("<br /> первый символ - " + firstChar + " последний символ - " + lastChar + "<br />");
 
@@ -35,11 +35,13 @@
         str = "Hello, world!";
         substr = str.substring(6, 12);
         document.write(substr);
+        alert(str);
 
         // substr - возвращает строку начиная с указанного индекса, указанной длины.
         str = "Hello, world!";
         substr = str.substr(7, 5);
         document.write("<br />" + substr);
+        alert(str);
     </script>
 </head>
 <body>

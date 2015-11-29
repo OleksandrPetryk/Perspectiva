@@ -7,8 +7,8 @@
         // replace() -  производит операцию поиска с заменой.
 
         var text = "Строка для 123тести456рования при789мера.";
-        var pattern = /\d\d\d/g; // g - глобальный поиск - все вхождения, а не только первое.
-        var result = text.replace(pattern, "***");
+        var pattern = /\d\d\d/gi; // g - глобальный поиск - все вхождения, а не только первое.
+        var result = text.replace(pattern, " ");
         document.write(result);
     </script>
 </head>
