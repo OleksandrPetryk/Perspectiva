@@ -9,13 +9,13 @@
         }
 
         function addRollover(id, path) {
-            var e = document.getElementById(id);
+            var img = document.getElementById(id);
 
             // если элемент не img пропускаем, завершаем функцию.
-            if (e.tagName.toLowerCase() != "img") return;
+            if (img.tagName.toLowerCase() != "img") return;
             
-            e.addEventListener("mouseover", function () { this.src = path; })
-            e.addEventListener("mouseout", function () { this.src = "images/button.jpg" })
+            img.addEventListener("mouseover", function () { this.src = path; })
+            img.addEventListener("mouseout", function () { this.src = "images/button.jpg" })
         }
 
     </script>

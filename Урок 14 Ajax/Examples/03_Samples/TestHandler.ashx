@@ -8,7 +8,7 @@ public class TestHandler : IHttpHandler {
     public void ProcessRequest (HttpContext context) {
         context.Response.ContentType = "text/plain";
         
-        System.Threading.Thread.Sleep(3000); // Задержка на 3 секунды.
+        System.Threading.Thread.Sleep(4000); // Задержка на 3 секунды.
         context.Response.Write("Hello World " + DateTime.Now.ToLocalTime() ); // Отправка ответа.
     }
  
