@@ -17,16 +17,14 @@
         function choose() {
             i++;
             // выделит все элементы списка до элемента с индексом i
-            $("li:eq(" + (i - 1) + ")") // li:eq("li:eq(0) ")
+            $("li:eq(" + (i - 1) + ")")
                 .css("background-color", "white");
 
             // выделит элементы списка по индексу i
             $("li:eq(" + i + ")")
                 .css("background-color", "yellow");
 
-            //if (i == 4) { i = -1; }
-
-
+            //if (i == 5) { i = 0; }
 
         }
 
