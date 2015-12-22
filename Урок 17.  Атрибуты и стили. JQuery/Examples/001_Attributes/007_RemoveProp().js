@@ -9,9 +9,9 @@ $(function () {
 
   var output = $("p");
 
-  //output.attr("secretCode", 1234);
+   output.attr("secretCode", 1234);
 
-  //output.append("Секретный код: ", String(output.prop("secretCode")), ". ");
+   output.append("Секретный код: ", String(output.prop("secretCode")), ". ");
 
   //output.removeProp("secretCode");
   //output.append("Теперь: ", String(output.prop("secretCode")), ". ");

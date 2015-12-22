@@ -10,8 +10,8 @@
         $(function () {
 
             $("p").click(function () {
-                alert($(this).text());
-                //alert($(this).html());
+                $(this).text("<a href=\"#\">Link</a>");
+                //$(this).html("<a href=\"#\">Link</a>");
             });
 
         });
@@ -29,10 +29,7 @@
 </head>
 <body>
     <p>
-        <b>Test</b> string 1
-    </p>
-    <p>
-        Test string 2
+        Test string 1
     </p>
 </body>
 </html>

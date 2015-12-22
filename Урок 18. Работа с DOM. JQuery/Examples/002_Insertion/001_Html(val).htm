@@ -1,20 +1,16 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <title>Метод html()</title>
+    <title>Метод html(val)</title>
     <script src="jquery-1.10.2.js"></script>
     <script>
 
+
       //Метод html() - получает HTML-содержимое первого элемента в наборе соответствующих элементов или устанавливает HTML-разметку для каждого 
-       //совпавшего элемента.
+      //совпавшего элемента.
 
         $(function () {
-
-            $("p").click(function () {
-                // $(this) - ссылка на объект, в котором произошло событие.
-                alert($(this).html());
-            });
-
+            $("p").html("<u>Hello world</u>");
         });
 
     </script>

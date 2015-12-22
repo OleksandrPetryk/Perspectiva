@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html><html>
+
+<head>
+  
+  <title></title>
+
+  <script src="jquery-1.10.2.js"></script>
+
+</head>
+
+<body>
+
+<div id="el" style="position: absolute; top: 100px; left: 100px; width: 100px; height: 100px; background-color: #0f0;"></div>
+
+<div id="coords" style="position: fixed; top: 50%; left: 50%; "></div>
+
+<script>
+  
+  $('#el').mousemove(function (e) {
+
+    var coords = $('#coords');
+
+    coords.html("clientX: " + e.clientX +
+                 ", clientY: " + e.clientY +
+                 "<br />offsetX: " + e.offsetX +
+                 ", offsetY: " + e.offsetY +
+                 "<br />pageX: " + e.pageX +
+                 ", pageY: " + e.pageY
+    );
+  }
+  );
+</script>
+
+
+  <div style="height:900px"> </div>
+
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Метод prevAll()</title>
+    <script src="jquery-1.10.2.js"></script>
+    <script>
+
+        // Метод prevAll() - поиск всех родственных элементов перед текущим элементом
+
+        $(function () {
+            $("div.class1").prevAll().css("background-color", "Red");
+            //$("p.class1").prevAll("p").css("background-color", "Red");
+        });
+
+    </script>
+    <style>
+        body {
+            background-color: Silver;
+            color: White;
+        }
+
+        div {
+            padding: 10px;
+            font-weight: bold;
+            background-color: Gray;
+        }
+    </style>
+</head>
+<body>
+    
+    <div>А это простой Div</div>
+    
+    <div>Параграф №1</div>
+    <div>Параграф №2</div>
+  
+    <!--<div>-->   
+
+         <div class="class1">Параграф №3</div>
+    
+    <!--</div>-->  
+
+    <div>Параграф №4</div>
+    <div>Параграф №5</div>
+    <div>Параграф №6</div>
+    <div>Параграф №7</div>
+    <div>Параграф №8</div>
+    <div>Параграф №9</div>
+    <div>Параграф №10</div>
+    <div>А это простой Div</div>
+
+</body>
+</html>

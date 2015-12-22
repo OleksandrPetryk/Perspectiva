@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Метод nextAll()</title>
+    <script src="jquery-1.10.2.js"></script>
+    <script>
+
+        // Метод nextAll() - поиск всех родственных элементов после текущего элемента. 
+
+        $(function () {
+             //$("div.class1").nextAll().css("background-color", "Red");
+               $("div.class1").nextAll("p").css("background-color", "Red");
+        });
+
+    </script>
+    <style>
+        body {
+            background-color: Silver;
+            color: White;
+        }
+
+        p {
+            padding: 10px;
+            font-weight: bold;
+            background-color: Gray;
+        }
+    </style>
+</head>
+<body>
+    <div>Paragraph 0</div>
+    <div>Paragraph 1</div>
+    
+     
+    <div class="class1">Paragraph 2</div>    
+    <p>paragraph</p>
+    <div>Paragraph 3</div>
+    <div>Paragraph 4</div>
+    <div>Paragraph 5</div>
+    <div>Paragraph 6</div>
+    <div>Paragraph 7</div>
+    <div>Paragraph 8</div>
+     
+       <div> 
+            <div>Paragraph 9  </div>
+            <div>Paragraph 10 </div>    
+       </div>
+
+    <div>Div</div>
+
+</body>
+</html>
