@@ -24,6 +24,7 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -83,16 +84,11 @@
     <Content Include="Samples\005_JSON\001_JSON.html" />
     <Content Include="Samples\005_JSON\002_ajax%28json%29.html" />
     <Content Include="Samples\005_JSON\jquery-1.8.1.js" />
-    <Content Include="Samples\Task\jquery-1.8.1.js" />
     <Content Include="Samples\005_JSON\HandlerObject.ashx" />
     <Content Include="Samples\004_Aditional\001_param%28%29.html" />
     <Content Include="Samples\004_Aditional\002_serialize%28%29.html" />
     <Content Include="Samples\004_Aditional\003_serializeArray%28%29.html" />
     <Content Include="Samples\004_Aditional\jquery-1.8.1.js" />
-    <Content Include="Samples\Task\HtmlPage3.html" />
-    <Content Include="Samples\Task\index.html" />
-    <Content Include="Samples\Task\HtmlPage2.html" />
-    <Content Include="Samples\Task\HtmlPage1.html" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

@@ -39,3 +39,9 @@ D:\SkyDrive\DocumentCBSystematics\JQ\Урок 10. Ajax в jQuery\001_Samples\AJA
 D:\SkyDrive\DocumentCBSystematics\JQ\Урок 10. Ajax в jQuery\001_Samples\AJAX_Basics_JavaScript\obj\Debug\AJAX_Basics_JavaScript.csprojResolveAssemblyReference.cache
 D:\SkyDrive\DocumentCBSystematics\JQ\Урок 10. Ajax в jQuery\001_Samples\AJAX_Basics_JavaScript\obj\Debug\AJAX_Basics_JavaScript.dll
 D:\SkyDrive\DocumentCBSystematics\JQ\Урок 10. Ajax в jQuery\001_Samples\AJAX_Basics_JavaScript\obj\Debug\AJAX_Basics_JavaScript.pdb
+G:\OneDrive\Perspectiva\Repository\Урок 19. Ajax в JQuery\Examples\AJAX_Basics_JavaScript\bin\AJAX_Basics_JavaScript.dll.config
+G:\OneDrive\Perspectiva\Repository\Урок 19. Ajax в JQuery\Examples\AJAX_Basics_JavaScript\bin\AJAX_Basics_JavaScript.dll
+G:\OneDrive\Perspectiva\Repository\Урок 19. Ajax в JQuery\Examples\AJAX_Basics_JavaScript\bin\AJAX_Basics_JavaScript.pdb
+G:\OneDrive\Perspectiva\Repository\Урок 19. Ajax в JQuery\Examples\AJAX_Basics_JavaScript\obj\Debug\AJAX_Basics_JavaScript.csprojResolveAssemblyReference.cache
+G:\OneDrive\Perspectiva\Repository\Урок 19. Ajax в JQuery\Examples\AJAX_Basics_JavaScript\obj\Debug\AJAX_Basics_JavaScript.dll
+G:\OneDrive\Perspectiva\Repository\Урок 19. Ajax в JQuery\Examples\AJAX_Basics_JavaScript\obj\Debug\AJAX_Basics_JavaScript.pdb
